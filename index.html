@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <div class="navbar">
-    <div class="container">
+  <div class="navbar  pt-20 pb-20">
+    <div class="container flex justify-content-space-between align-items-center ">
       <div class="navbar__search-box">
         <div class="search">
           <form class="search__form" action="#" onsubmit="return false;">
@@ -35,7 +35,11 @@
       </div>
 
       <div class="navbar__logo">
-        <a href="/"><img src="./images/logo-header.png" alt="logo large"></a>
+        <a href="/">
+          <img class="hidden show-large" src="./images/logo-header.png" alt="logo large">
+          <img class="hidden show-small" src="./images/logo-header-small.png" alt="logo large">
+        </a>
+
       </div>
 
     </div>

@@ -12,12 +12,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html {
     font-size: 62.5%;
 }
 body {
     font-family: "vazir", Verdana, Geneva, Tahoma, sans-serif;
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 input,
 select,
@@ -26,6 +26,105 @@ textarea {
     font-family: inherit;
 }
 
-li{
+li {
     list-style: none;
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media only screen and (min-width: 992.2px) {
+    .container {
+        max-width: 960px;
+    }
+    
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+     only}
+}
+
+/* helper */
+/* flex helpers */
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex_column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.perfect-center {
+    justify-content: center;
+    align-items: center;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.justify-content-space-around {
+    justify-content: space-around;
+}
+.align-items-center {
+    align-items: center;
+}
+
+/* padding margin helper */
+.pt-10 {
+    padding-top: 1rem;
+}
+.pb-10 {
+    padding-bottom: 1rem;
+}
+.pt-20 {
+    padding-top: 2rem;
+}
+.pb-20 {
+    padding-bottom: 2rem;
+}
+.mt-10 {
+    margin-top: 1rem;
+}
+.mb-10 {
+    margin-bottom: 1rem;
+}
+.mt-20 {
+    margin-top: 2rem;
+}
+.mb-20 {
+    margin-bottom: 2rem;
+}
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .show-small {
+        display: block;
+    }
+}
+@media only  screen and (min-width: 992.2px) {
+    .show-large {
+        display: block;
+    }
 }
