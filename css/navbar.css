@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+
+@mediat
