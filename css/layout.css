@@ -29,7 +29,10 @@ textarea {
 li {
     list-style: none;
 }
-
+a{
+    color: #0d62da;
+    text-decoration: none;
+}
 @media only screen and (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -39,7 +42,7 @@ li {
     .container {
         max-width: 960px;
     }
-    
+
 }
 @media only screen and (min-width: 768px) {
     .container {
@@ -82,8 +85,8 @@ li {
 .justify-content-space-between {
     justify-content: space-between;
 }
-.justify-content-space-around {
-    justify-content: space-around;
+.justify-content-space-evenly {
+    justify-content: space-evenly;
 }
 .align-items-center {
     align-items: center;
@@ -117,6 +120,9 @@ li {
 .hidden {
     display: none;
 }
+
+
+
 
 @media only screen and (max-width: 992px) {
     .show-small {

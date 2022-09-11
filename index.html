@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>برنامه نویسی</title>
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/search.css" />
+        <link rel="stylesheet" href="./css/nav.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>برنامه نویسی </title>
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/search.css">
-  <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/navbar.css">
-</head>
+    <body>
+        <div class="navbar pt-20 pb-20">
+            <div class="container flex justify-content-space-between align-items-center">
+                <div class="navbar__search-box">
+                    <div class="search">
+                        <form class="search__form" action="#" onsubmit="return false;">
+                            <input type="text" placeholder="جستجو کنید" class="search__input" />
+                            <button class="search__button"><span class="search__circle"></span> <span class="search__stand"></span></button>
+                        </form>
+                    </div>
+                </div>
 
-<body>
-  <div class="navbar  pt-20 pb-20">
-    <div class="container flex justify-content-space-between align-items-center ">
-      <div class="navbar__search-box">
-        <div class="search">
-          <form class="search__form" action="#" onsubmit="return false;">
-            <input type="text" placeholder="جستجو کنید" class="search__input">
-            <button class="search__button"><span class="search__circle"></span>
-              <span class="search__stand"></span></button>
-          </form>
+                <div class="navbar__nav">
+                    <input type="checkbox" class="nav__burger-checkbox" id="burgermenu" />
+                    <label class="nav__burger-label" for="burgermenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul class="nav__lists">
+                        <li class="nav__list"><a href="/" class="nav__link">خانه</a></li>
+                        <li class="nav__list">
+                            <a href="/" class="nav__link">دوره ها <span class="nav__arrow"></span></a>
+                            <ul class="nav__sublists1">
+                                <li><a href="#">تور و گردشگری</a></li>
+                                <li><a href="#">آموزش آنلاین</a></li>
+                                <li class="nav__sublist1">
+                                    <a href="#">سایر</a>
+                                    <ul class="nav__sublists2">
+                                        <li><a href="#">فروشگاه اینترنتی</a></li>
+                                        <li><a href="#">بلیت هواپیما</a></li>
+                                        <li><a href="#">اجاره خودرو</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__list">
+                            <a href="/" class="nav__link">مدرسین <span class="nav__arrow"></span></a>
+                        </li>
+                        <li class="nav__list"><a href="/" class="nav__link">درباره ما</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar__logo">
+                    <a href="index.html">
+                        <img class="hidden show-large" src="./images/logo-header.png" alt="logo large" />
+                        <img class="hidden show-small" src="./images/logo-header-small.png" alt="logo large" />
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="navbat__nav">
-        <ul class="nav__lists">
-          <li class="nav__list"><a href="/" class="nav__link">خانه</a></li>
-          <li class="nav__list"><a href="/" class="nav__link">دوره ها</a></li>
-          <li class="nav__list"><a href="/" class="nav__link">مدرسین</a></li>
-          <li class="nav__list"><a href="/" class="nav__link">درباره ما</a></li>
-        </ul>
-      </div>
-
-      <div class="navbar__logo">
-        <a href="/">
-          <img class="hidden show-large" src="./images/logo-header.png" alt="logo large">
-          <img class="hidden show-small" src="./images/logo-header-small.png" alt="logo large">
-        </a>
-
-      </div>
-
-    </div>
-  </div>
-
-
-</body>
-
+    </body>
 </html>

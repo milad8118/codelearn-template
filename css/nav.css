@@ -1,5 +1,117 @@
-.nav__lists{
+/* L1 LISTS */
+.nav__lists {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+}
+
+/* L1 LIST */
+.nav__list{
+position: relative
+}
+
+/* L1 LINK */
+.nav__link{
+    padding: 0 1.3rem ;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    position: relative;
+}
+
+.nav__link:hover{
+    color: #3c4858;
+}
+.nav__link::after{
+    width: 0%;
+    content: '';
+    transition: width 500ms ease;
+    background-color: #0d62da;
+    height: 0.3rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 0%;
+    border-radius: 0.5rem;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+.nav__link:hover::after{
+width: 100%;
+left: auto;
+right: 0;
+}
+/* arrow */
+.nav__arrow{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 0.7rem;
+    height: .7rem;
+    transition: transform 600ms ease;
+    /* border-right: 0.2rem solid #3c4858;
+    border-bottom: 0.2rem solid #3c4858; */
+    border: 0.2rem solid #3c4858;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+}
+.nav__link:hover > span{
+    transform: rotate(225deg);
+}
+/* sublist1 ul*/
+/* sublist1 li*/
+
+
+/* sublist2 ul*/
+/* sublist2  li*/
+/* burgermenu */
+.nav__burger-label {
+    width: 4rem;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+}
+@media only screen and (min-width: 769px) {
+    .nav__burger-label  {
+        display: none;
+    }
+}
+.nav__burger-label > span {
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #2196f3;
+    transition: all 300ms cubic-bezier(0.51, -0.38, 0.52, 1.54);
+
+}
+.nav__burger-label :nth-child(1) {
+    width: 80%;
+}
+.nav__burger-label :nth-child(2) {
+    width: 100%;
+}
+.nav__burger-label :nth-child(3) {
+    width: 60%;
+}
+
+
+
+ .nav__burger-checkbox:checked ~ .nav__burger-label :nth-child(1) {
+    width: 50%;
+    transform-origin: bottom;
+    transform: rotate(45deg) translate(-1rem,1.6rem);
+}
+.nav__burger-checkbox:checked + .nav__burger-label :nth-child(2) {
+    width: 100%;
+    transform: rotate(-45deg);
+}
+.nav__burger-checkbox:checked ~   .nav__burger-label :nth-child(3) {
+    width: 50%;
+    transform-origin: bottom;
+    transform: rotate(45deg) translate(-0.6rem ,-.1rem)
+ }
+ .nav__burger-checkbox {
+    display:none;
 }

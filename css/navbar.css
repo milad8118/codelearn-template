@@ -9,14 +9,10 @@
 }
 
 @media only screen and (max-width: 992.2px) {
-    .navbar{
-        position: sticky;
-        top: 0;
-        box-shadow: 0 0  5px 2px #444444;
-    }
+
     .navbar__search-box{
         order: 1;
-        width: 12rem;
+        width: auto;
     }
 
     .navbar__logo{
@@ -27,4 +23,12 @@
         .nav__lists{
             display: none;
         }
+        .navbar{
+            position: sticky;
+            top: 0;
+            box-shadow: 0 0  5px 2px #444444;
+        }
     }
+
+    /* navlist  */
+
