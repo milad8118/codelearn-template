@@ -32,10 +32,17 @@ li {
 a{
     color: #0d62da;
     text-decoration: none;
+    transition: color 300ms ease;
 }
+
 @media only screen and (min-width: 576px) {
     .container {
         max-width: 540px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
     }
 }
 @media only screen and (min-width: 992.2px) {
@@ -43,11 +50,6 @@ a{
         max-width: 960px;
     }
 
-}
-@media only screen and (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
 }
 
 @media only screen and (min-width: 1200px) {

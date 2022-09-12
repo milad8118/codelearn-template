@@ -1,69 +1,159 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>برنامه نویسی</title>
-        <link rel="stylesheet" href="css/layout.css" />
-        <link rel="stylesheet" href="css/search.css" />
-        <link rel="stylesheet" href="./css/nav.css" />
-        <link rel="stylesheet" href="./css/navbar.css" />
-        <link rel="stylesheet" href="./css/all.css">
-    </head>
 
-    <body>
-        <div class="navbar pt-20 pb-20">
-            <div class="container flex justify-content-space-between align-items-center">
-                <div class="navbar__search-box">
-                    <div class="search">
-                        <form class="search__form" action="#" onsubmit="return false;">
-                            <input type="text" placeholder="جستجو کنید" class="search__input" />
-                            <button class="search__button"><span class="search__circle"></span> <span class="search__stand"></span></button>
-                        </form>
-                    </div>
-                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>برنامه نویسی</title>
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/all.css">
+</head>
 
-                <div class="navbar__nav">
-                    <input type="checkbox" class="nav__burger-checkbox" id="burgermenu" />
-                    <label class="nav__burger-label" for="burgermenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    <ul class="nav__lists">
-                        <li class="nav__list"><a href="/" class="nav__link">خانه</a></li>
-                        <li class="nav__list position-relative">
-                            <a href="/" class="nav__link nav__courses">دوره ها <span class="nav__arrow"></span></a>
-                            <ul class="nav__sublists1 nav__sublist">
-                                <li><a href="#"> <i class="fas fa-globe-asia"></i>  تور و گردشگری </i></a></li>
-                                <li><a href="#"> <i class="fas fa-user-graduate"></i>  آموزش آنلاین</a></li>
-
-                                <li class="nav__sublist1 position-relative">
-                                    <a href="#"> <i class="fas fa-list"></i>  سایر <span class="nav__sublist1-arrow"></span></a>
-
-                                    <ul class="nav__sublists2 nav__sublist ">
-                                        <li><a href="#"> <i class="fas fa-credit-card"></i>  فروشگاه اینترنتی</a></li>
-                                        <li><a href="#"> <i class="fas fa-hotel"></i>  بلیت هواپیما</a></li>
-                                        <li><a href="#"> <i class="fas fa-car"></i>  اجاره خودرو</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__list">
-                            <a href="/" class="nav__link">مدرسین <span class="nav__arrow"></span></a>
-                        </li>
-                        <li class="nav__list"><a href="/" class="nav__link">درباره ما</a></li>
-                    </ul>
-                </div>
-
-                <div class="navbar__logo">
-                    <a href="index.html">
-                        <img class="hidden show-large" src="./images/logo-header.png" alt="logo large" />
-                        <img class="hidden show-small" src="./images/logo-header-small.png" alt="logo large" />
-                    </a>
+<body>
+    <div class="navbar pt-20 pb-20">
+        <div class="container flex justify-content-space-between align-items-center">
+            <div class="navbar__search-box">
+                <div class="search">
+                    <form class="search__form" action="#" onsubmit="return false;">
+                        <input type="text" placeholder="جستجو کنید" class="search__input" />
+                        <button class="search__button"><span class="search__circle"></span> <span
+                                class="search__stand"></span></button>
+                    </form>
                 </div>
             </div>
+
+            <div class="navbar__nav">
+                <input type="checkbox" class="nav__burger-checkbox" id="burgermenu" />
+                <label class="nav__burger-label" for="burgermenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav__lists ">
+
+                    <li class="nav__list"><a href="./authentication/login.html" class="nav__link">ورود</a></li>
+                    <li class="nav__list"><a href="./authentication/sign-up.html" class="nav__link">عضویت</a></li>
+
+                    <li class="nav__list"><a href="/" class="nav__link">خانه</a></li>
+                    <li class="nav__list position-relative">
+                        <a href="/" class="nav__link nav__courses">دوره ها<span class="nav__arrow"></span></a>
+                        <ul class="nav__sublists1 nav__sublist">
+                            <li><a href="#"> <i class="fas fa-globe-asia"></i>تور و گردشگری </i></a></li>
+                            <li><a href="#"> <i class="fas fa-user-graduate"></i>آموزش آنلاین</a></li>
+
+                            <li class="nav__sublist1 position-relative">
+                                <a class="flex " href="#"> <i class="fas fa-list"></i>سایر<i
+                                        class="fas fa-angle-left"></i></a>
+
+                                <ul class="nav__sublists2 nav__sublist ">
+                                    <li><a href="#"> <i class="fas fa-credit-card"></i>فروشگاه اینترنتی</a></li>
+                                    <li><a href="#"> <i class="fas fa-hotel"></i>بلیت هواپیما</a></li>
+                                    <li><a href="#"> <i class="fas fa-car"></i>اجاره خودرو</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__list nav__mega ">
+                        <a href="/" class="nav__link">مدرسین <span class="nav__arrow"></span></a>
+                        <div class="nav__mega-content">
+
+                            <div class="nav__mega-column flex flex_column perfect-center ">
+
+                                <img class="pb-20" src="./images/mega-menu-bg.png" alt="mega menu">
+
+                                <a href="#" class="nav__button">سه روز تا پایان تخفیف </a>
+                            </div>
+
+                            <div class="nav__mega-column">
+                                <h4>تمامی دوره ها</h4>
+                                <ul class="nav__mega-lists">
+                                    <li>
+
+                                        <a href="#"><i class="fas fa-globe-asia"></i>
+                                            <span>css دوره پیشرفته </span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#"><i class="fas fa-globe-asia"></i>
+                                            <span>css دوره پیشرفته </span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#"><i class="fas fa-globe-asia"></i>
+                                            <span>css دوره پیشرفته </span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#"><i class="fas fa-globe-asia"></i>
+                                            <span>css دوره پیشرفته </span>
+                                        </a>
+
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                            <div class="nav__mega-column">
+                                <h4>ویدیو های پر بازدید</h4>
+                                <ul  class="nav__mega-lists">
+
+                                    <li>
+
+                                        <a href="#"><i class="fas fa-user-graduate"></i>
+                                            <span>css دوره پیشرفته </span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#"><i class="fas fa-user-graduate"></i>
+                                            <span>css دوره پیشرفته </span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#"><i class="fas fa-user-graduate"></i>
+                                            <span>css دوره پیشرفته </span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="#"><i class="fas fa-user-graduate"></i>
+                                            <span>css دوره پیشرفته </span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="nav__list"><a href="/" class="nav__link">درباره ما</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar__logo">
+                <a href="index.html">
+                    <img class="hidden show-large" src="./images/logo-header.png" alt="logo large" />
+                    <img class="hidden show-small" src="./images/logo-header-small.png" alt="logo large" />
+                </a>
+            </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

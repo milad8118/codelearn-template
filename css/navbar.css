@@ -8,16 +8,11 @@
     width: 20rem;
 }
 
-@media only screen and (max-width: 992.2px) {
+.navbar__nav{
 
-    .navbar__search-box{
-        order: 1;
-        width: auto;
-    }
-
-    .navbar__logo{
-        order: 2;
-    }
+    position: relative;
+    flex-grow: 1;
+}
 
     @media only screen and (max-width: 768px) {
         .nav__lists{
@@ -28,6 +23,18 @@
             top: 0;
             box-shadow: 0 0  5px 2px #444444;
         }
+        .navbar__nav{
+            flex-grow:0 ;
+        }
+    }
+@media only screen and (max-width: 992.2px) {
+
+    .navbar__search-box{
+        order: 1;
+        width: auto;
+    }
+    .navbar__logo{
+        order: 2;
     }
 
     /* navlist  */
