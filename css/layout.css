@@ -59,8 +59,7 @@ a{
 }
 @media only screen and (min-width: 1400px) {
     .container {
-        max-width: 1320px;
-     only}
+        max-width: 1320px;}
 }
 
 /* helper */
@@ -119,7 +118,7 @@ a{
 .mb-20 {
     margin-bottom: 2rem;
 }
-.hidden {
+.hidden-logo {
     display: none;
 }
 .position-relative{
