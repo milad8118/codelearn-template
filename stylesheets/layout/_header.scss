@@ -1,0 +1,95 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 45rem;
+    padding: 3rem;
+    background-color: $color-green1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        background-image: linear-gradient(342deg, $color-green1, $color-white);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
+
+    }
+
+    .header__wrap {
+        display: inline-block;
+    }
+
+    &__banner {
+        @include flex(space-evenly, center);
+        height: 100%;
+    }
+
+    // flex items
+    &__cta {
+        position: relative;
+        z-index: 2;
+        width: 50%;
+        @include flex(space-evenly, flex-start, column)
+    }
+
+    &__rocket-bg {
+        @include flex(center);
+        width: 50%;
+        height: 360px;
+        background: url(/images/rocket-bg.png) no-repeat center bottom;
+        background-size: contain;
+
+    }
+
+    &__rocket {
+        width: 20%;
+
+        background: url(/images/rocket.png) no-repeat center bottom;
+        background-size: contain;
+        animation: rocket-moving 4s infinite linear;
+    }
+
+    @media only screen and (max-width: 992.2px) {
+        height: 40rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 1rem 0;
+        align-items: center;
+        height: 45rem;
+
+        &::after {
+            display: none;
+        }
+
+        &__cta {
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        &__banner {
+            flex-direction: column;
+            justify-content: space-between;
+
+
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        &__rocket-bg {
+            width: 100%;
+        }
+
+        &__rocket {
+            width: 13%;
+        }
+
+    }
+
+
+}

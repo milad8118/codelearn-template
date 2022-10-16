@@ -1,0 +1,19 @@
+.features{
+    position: relative;
+    top: -50px;
+    z-index: 10;
+ display: flex;
+ flex-wrap: wrap;
+
+ &__box{
+     flex-grow: 1;
+    width: 30rem;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+
+    background-color: $color-white;
+    box-shadow: 0  8px 16px 0 rgba($color-blue3, .2);
+
+ }
+}
