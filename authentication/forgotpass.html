@@ -5,23 +5,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login</title>
-        <link rel="stylesheet" href="../stylesheets/authentication.css">
-        <link rel="stylesheet" href="../stylesheets/main.css">
-        <link rel="stylesheet" href="./dist/output.css" >
-        <link rel="stylesheet" href="./css/all.css">
+        <link rel="stylesheet" href="../stylesheets/main.css" />
+        <link rel="stylesheet" href="../stylesheets/pages/authentication.css" />
+
+        <link rel="stylesheet" href="./dist/output.css" />
+        <link rel="stylesheet" href="./css/all.css" />
     </head>
 
     <body class="authentication">
-        <div class="content ">
-            <div class=" main-container-small">
-                <p class="top-text"><span class="blue">حساب خودرا</span> بازیابی کنید</p>
-                <div class="authentication__form">
-                    <form action="./logged.html">
-                        <input class="email" type="email" placeholder="ایمیل  " minlength="5" required /><br />
-                        <button class="authentication__btn">ارسال لینک</button><br />
-                    </form>
+
+        <div class="authentication-container">
+            <div class="navbar__logo-authentication">
+                <a class="" href="#">
+                    <img class="hidden-logo show-large" src="/images/logo-header.png" alt="logo large" />
+                    <img class="hidden-logo show-small" src="/images/logo-header-small.png" alt="logo small" />
+                </a>
+            </div>
+            <div class="content">
+                <div class="main-container-small">
+                    <p class="top-text"><span class="blue">حساب خودرا</span> بازیابی کنید</p>
+                    <div class="authentication__form">
+                        <form action="./logged.html">
+                            <input class="email" type="email" placeholder="ایمیل  " minlength="5" required /><br />
+                            <button class="authentication__btn">ارسال لینک</button><br />
+                        </form>
+                    </div>
+                    <div class="authentication__fotoer"><a class="authentication__footer-text" href="./login.html">برگشت به صفحه ورود</a><br /></div>
                 </div>
-                <div class="authentication__fotoer"><a class="authentication__footer-text" href="./login.html">برگشت به صفحه ورود</a><br /></div>
             </div>
         </div>
     </body>
