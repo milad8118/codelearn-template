@@ -10,7 +10,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    font-family: "vazir", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font-main;
     font-size: 1.5rem;
 }
 input,
@@ -24,7 +24,7 @@ li {
     list-style: none;
 }
 a{
-    color: #0d62da;
+    color:  $color-blue1;
     text-decoration: none;
     transition: color 300ms ease;
 }

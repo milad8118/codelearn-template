@@ -1,0 +1,34 @@
+.success-icon {
+    fill: none;
+    stroke: $color-green2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    &:hover {
+        stroke-dasharray: 250;
+        stroke-dashoffset: 250;
+        animation: stroke-dashoffset .8s linear forwards, success-scale 300ms ease .8s;
+        // animation-direction: alternate;
+    }
+}
+
+.features__box svg,
+.features__box object {
+
+    width: 10rem;
+    height: 10rem;
+}
+
+.world-icon {
+    fill: none;
+    stroke: $color-orange;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+
+    &:hover {
+        stroke-dasharray: 150;
+        stroke-dashoffset: 150;
+        animation: stroke-dashoffset 1500ms linear forwards, success-scale 300ms ease 1500ms, fade-in 1500ms linear forwards;
+    }
+}

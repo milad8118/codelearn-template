@@ -1,19 +1,33 @@
-.features{
+.features {
     position: relative;
     top: -50px;
     z-index: 10;
- display: flex;
- flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
- &__box{
-     flex-grow: 1;
-    width: 30rem;
-    padding: 1rem 2rem;
-    margin: 2rem;
-    border-radius: 1rem;
+    @media only screen and (max-width: 992.2px) {
+        top: 0;
+    }
 
-    background-color: $color-white;
-    box-shadow: 0  8px 16px 0 rgba($color-blue3, .2);
+    &__box {
+        flex-grow: 1;
+        width: 30rem;
+        padding: 1rem 2rem;
+        margin: 2rem;
+        border-radius: 1rem;
+        transition: all .3s ease-in-out;
+        background-color: $color-white;
+        box-shadow: 0 8px 16px 0 rgba($color-gray3, .2);
+        text-align: center;
 
- }
+        @include flex(space-between, center, column);
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__text {
+        padding: 1rem 2rem;
+    }
 }
