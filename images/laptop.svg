@@ -1,6 +1,6 @@
 <svg version="1.1" id="laptop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="86.06px"
 	 height="59.69px" viewBox="0 0 86.06 59.69" style="enable-background:new 0 0 86.06 59.69;" xml:space="preserve">
-<style type="text/css">
+<style type="text/css">	
 	.st0, .st1, .st2{
 		fill: #1d3557;
 		stroke:#1d3557;
@@ -41,3 +41,4 @@
 	<animate attributeName="x2" begin="laptop.mouseover" end="laptop.mouseout" keyTimes="0; .5; 1" values="51.34;10.9;51.34" dur="2s" repeatCount="indefinite"/>
 </line>
 </svg>
+
