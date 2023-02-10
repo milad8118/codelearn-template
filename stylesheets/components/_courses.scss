@@ -1,0 +1,55 @@
+.course{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__box{
+position: relative;
+        display: flex;
+        flex:  0 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 35rem;
+
+        margin: 1rem;
+        border:  1px solid $color-gray2;
+        border-radius: .5rem;
+    }
+}
+
+.header-title{
+    position: relative;
+    margin-bottom: 4rem;
+    font-family: "lalezar";
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-align: center;
+    color: $color-gray;
+    &::after{
+        position: absolute;
+        left: 56%;
+        top: 50%;
+        content:  '';
+        width: 30rem;
+        height: .3rem;
+        background-color: $color-orange;
+        overflow: hidden;
+        border-radius: .5rem;
+
+    }
+    &::before{
+        position: absolute;
+        right: 56%;
+        top: 50%;
+        content:  '';
+        width: 30rem;
+        height: .3rem;
+        background-color: $color-orange;
+        overflow: hidden;
+        border-radius: .5rem;
+
+    }
+}

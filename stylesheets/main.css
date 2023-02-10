@@ -624,6 +624,61 @@ h6 {
           animation: stroke-dashoffset 1500ms linear forwards, success-scale 300ms ease 1500ms, fade-in 1500ms linear forwards;
 }
 
+.course {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.course__box {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 35rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+}
+
+.header-title {
+  position: relative;
+  margin-bottom: 4rem;
+  font-family: "lalezar";
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #3c4858;
+}
+
+.header-title::after {
+  position: absolute;
+  left: 56%;
+  top: 50%;
+  content: '';
+  width: 30rem;
+  height: .3rem;
+  background-color: #e76f51;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+
+.header-title::before {
+  position: absolute;
+  right: 56%;
+  top: 50%;
+  content: '';
+  width: 30rem;
+  height: .3rem;
+  background-color: #e76f51;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+
 .nav__lists {
   display: flex;
   justify-content: center;
